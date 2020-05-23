@@ -1,0 +1,14 @@
+C:\Users\browneko\source\repos\EkspedisiBarang\EkspedisiBarang\bin\Debug\EkspedisiBarang.exe.config
+C:\Users\browneko\source\repos\EkspedisiBarang\EkspedisiBarang\bin\Debug\EkspedisiBarang.exe
+C:\Users\browneko\source\repos\EkspedisiBarang\EkspedisiBarang\bin\Debug\EkspedisiBarang.pdb
+C:\Users\browneko\source\repos\EkspedisiBarang\EkspedisiBarang\obj\Debug\EkspedisiBarang.Form1.resources
+C:\Users\browneko\source\repos\EkspedisiBarang\EkspedisiBarang\obj\Debug\EkspedisiBarang.Properties.Resources.resources
+C:\Users\browneko\source\repos\EkspedisiBarang\EkspedisiBarang\obj\Debug\EkspedisiBarang.csproj.GenerateResource.cache
+C:\Users\browneko\source\repos\EkspedisiBarang\EkspedisiBarang\obj\Debug\EkspedisiBarang.csproj.CoreCompileInputs.cache
+C:\Users\browneko\source\repos\EkspedisiBarang\EkspedisiBarang\obj\Debug\EkspedisiBarang.exe
+C:\Users\browneko\source\repos\EkspedisiBarang\EkspedisiBarang\obj\Debug\EkspedisiBarang.pdb
+C:\Users\browneko\source\repos\EkspedisiBarang\EkspedisiBarang\obj\Debug\EkspedisiBarang.homeScreen1.resources
+C:\Users\browneko\source\repos\EkspedisiBarang\EkspedisiBarang\obj\Debug\EkspedisiBarang.PesanankuScreen1.resources
+C:\Users\browneko\source\repos\EkspedisiBarang\EkspedisiBarang\obj\Debug\EkspedisiBarang.CekTarifScreen.resources
+C:\Users\browneko\source\repos\EkspedisiBarang\EkspedisiBarang\obj\Debug\EkspedisiBarang.LokasiScreen.resources
+C:\Users\browneko\source\repos\EkspedisiBarang\EkspedisiBarang\obj\Debug\EkspedisiBarang.AboutUsScreen.resources
