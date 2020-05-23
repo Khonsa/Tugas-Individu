@@ -1,2 +1,4 @@
 # Tugas-Individu
-Nama : Khonsa Aziza Almash
+Nama : KHONSA AZIZA ALMASH
+NIM : 18051204015
+Kelas : TEKNIK INFORMATIKA 2018 A
