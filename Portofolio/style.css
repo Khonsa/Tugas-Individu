@@ -1,0 +1,596 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Baloo Thambi 2', cursive;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    max-width: 1140px;
+}
+
+.column{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+}
+
+.judul-section{
+    border-left: 4px solid rgb(255, 130, 72);
+    height: 100px;
+    flex: 0 0 100%;
+}
+
+.judul-section h1{
+    font-size: 40px;
+    color: rgb(252, 150, 167);
+    padding-left: 15px;
+    padding-top: 20px;
+    margin: 0;
+}
+.judul-section h1#gelap{
+    font-size: 40px;
+    color: rgb(53, 41, 33);
+    padding-left: 15px;
+    padding-top: 20px;
+    margin: 0;
+}
+
+/*Header*/
+header{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+}
+header .container{
+    width: 150px;
+    position: fixed;
+    margin-top: 115px;
+    right: 0px;
+    border-left: 2px solid rgb(255, 130, 72);;
+}
+
+ 
+header .column{
+    justify-content: flex-end;
+    margin: auto;
+    position: relative;
+}
+
+header .navbar ul{
+    padding: 0;
+    margin: 0;
+}
+header .navbar ul li{
+    left: 20px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+header .navbar ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 50px;
+    color: rgb(236, 126, 126);
+    font-weight: 600;
+    position: relative;
+    padding-left: 20px;
+}
+header .navbar ul li a::before{
+    content: '';
+    border-radius: 50%;
+    border: 3px solid rgb(255, 130, 72);;
+    background-color: rgb(255, 130, 72);;
+    height: 0%;
+    width: 13px;
+    opacity: 0%;
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    transition: all .2s ease;
+    }
+
+
+    header .navbar ul li a:hover::before{
+        
+        height: 50%;
+        bottom: 0;
+        opacity: 100%;
+    }
+
+    header .navbar ul li a.active::before{
+        height: 50%;
+        bottom: 0;
+        opacity: 100%;
+    }
+/*Home*/
+.home{
+    min-height: 100vh;
+    background-image: url("image/fotoProfil.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.home .full-screen{ 
+    min-height: 100vh;
+    display: flex;
+}
+
+.home .home-content{
+    display: flex;
+    flex:0 0 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.home .home-content .block{
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.home .home-content .block h3{
+    color: rgb(88, 80, 87);
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.home .home-content .block h2#salam{
+    color: rgb(88, 80, 87);
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    padding-left: 250px;
+}
+.home .home-content .block h2#myname{
+    color: rgb(88, 80, 87);
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.home .home-content .block h1{
+    color: rgb(88, 80, 87);
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+.home .home-content .block .cv-button{
+    padding-top: 20px;}
+    
+.home .home-content .block .cv-button a{
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: rgba(39, 38, 39, 0.445);
+    color:rgb(255, 162, 240);
+    border: 3px solid #ffffff;
+    padding: 5px 25px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 800;
+    transition: all 1s ease;
+}
+.home .home-content .block .cv-button a:hover{
+    background-color: black;
+}
+
+/*Tentang saya*/
+.tentang-saya{
+    padding:60px 254px;
+    background-color: rgb(65, 52, 43);
+    display: flex;
+}
+
+.tentang-saya .gambar{
+    display: flex;
+}
+.tentang-saya .gambar img{
+    flex: 0 0 30%;
+    height: 435px;
+    padding-top: 30px;
+    display: block;
+}
+.tentang-saya .row .isi{
+    flex: 0 0 65%;
+    min-width: 65%;
+    margin-left: 20px;
+    margin-top: 30px;
+    z-index: 1;
+}
+.tentang-saya .row .isi h4{
+    color: pink;
+}
+.tentang-saya .row .isi h2 span{
+    color: silver;
+}
+.tentang-saya .row .isi p,h4 span{
+    color: white;
+}
+
+.tentang-saya .row .isi h5#lahir,#alamat,#status,#nim,#jurusan,#institusi{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.tentang-saya .row .isi h5#lahir span,#alamat span,#status span,#nim span,#jurusan span,#institusi span{
+    color: rgb(151, 150, 150);
+}
+.tentang-saya .row .motto{
+    flex: 0 0 50%;
+    width: 100px;
+    display: flex;
+    z-index: 0;
+    position: absolute;
+    left: 0px;
+}
+.tentang-saya .row .motto h2{
+    color: pink;
+    font-size: 60px;
+    opacity: 67%;
+    line-height: 80px;
+}
+.tentang-saya .row .motto h2 span{
+    color: lightslategrey;
+}
+
+
+/*pendidikan*/
+.pendidikan{
+    background-color: lightgray;;
+    padding: 50px 0px;
+}
+
+.pendidikan .riwayat{
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.pendidikan .box-gambar{
+    margin-top: 20px;
+    flex: 0 0 calc(24.33% - -7px);
+
+}
+.pendidikan .box-gambar .gbrsekolah a img{
+    height: 400px;
+    border-radius: 5%;
+    box-shadow: 10px 12px 12px grey;
+    opacity: 0.7;
+    transition: all .5s ease;
+}
+.pendidikan .box-gambar .gbrsekolah a img:hover{
+    opacity: 1;
+}
+.pendidikan .sekolah{
+    color: rgb(255, 130, 72);
+}
+.pendidikan h3{
+    font-size: 15px;
+}
+.pendidikan .sd1,.smp1,.sma1{
+    z-index: 55;
+    margin-left: 60px;
+}
+.pendidikan .kuliah1{
+    margin-left: 30px;
+}
+
+.pendidikan .cerita-sekolah{
+    margin-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.pendidikan .cerita-sekolah .kumpulan-cerita{
+    margin-bottom: 50px;
+    border: 5px solid darkgray;
+    padding: 20px;
+    border-radius:20px; 
+    background-color: rgb(252, 150, 167);
+}
+.pendidikan .cerita-sekolah .judul-tingkat{
+    color: rgb(65, 39, 39);
+}
+.pendidikan .cerita-sekolah .ceritanya{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+/*skill*/
+.skill{
+    background-color: rgb(71, 54, 53);
+    padding: 83px 0px;
+}
+.skill .konten-skill{
+    width: 700px;
+    margin-top: 40px;
+
+}
+.skill .konten-skill .skill-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+.skill .konten-skill .skill-box h6{
+    font-size: 20px;
+    font-weight: 600;
+    color: khaki;
+    margin: 0 0 10px;
+}
+.skill .konten-skill .skill-box .skill-bar{
+    height: 8px;
+    background-color: rgba(160, 131, 120, 0.37);
+    position: relative;
+}
+.skill .konten-skill .skill-box .skill-bar .skill-bar-in{
+    background-color: lightcoral;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.skill .konten-skill .skill-box .skill-bar .skill-bar-in span{
+    color: rgb(160, 131, 120);
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+    top: -25px;
+}
+
+/*Karya*/
+.karya{
+background-color: rgb(255, 255, 255);
+padding: 50px 100px;
+border-top: 20px dashed rgb(71, 54, 53);
+border-bottom: 20px dashed rgb(71, 54, 53);
+}
+
+.karya .kumpulan-foto{
+    flex: 0 0 70%;
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: space-between;
+
+}
+.karya .kumpulan-foto .foto{
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: (33.33% - 20px);
+    position: relative;
+}
+.karya .kumpulan-foto .foto img{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.589);
+    display: block;
+    margin-bottom: 20px;
+}
+
+.karya .kumpulan-foto .foto .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.karya .kumpulan-foto .foto:hover .overlay{
+    opacity: 1;
+
+}
+.karya .kumpulan-foto .foto .overlay .fa{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(255, 130, 72);
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.karya .kumpulan-foto .foto:hover .overlay .fa{
+    -webkit-animation: galleryIcon .8s ease;
+    animation: galleryIcon .8s ease;
+}
+@keyframes galleryIcon{
+    0%{
+        transform: translateY(-20px);opacity: 0;
+    }
+    100%{
+        transform: translateY(0);opacity: 1;
+    }
+}
+.karya .kumpulan-foto .foto .overlay h4{
+    margin-top: 15px;
+    font-size: 20px;
+    color: #ffffff;
+}
+.karya .kumpulan-foto .foto:hover .overlay h4{
+    -webkit-animation: galleryText .8s ease;
+    animation: galleryText .8s ease;
+}
+
+@keyframes galleryText{
+    0%{
+        transform: translateY(20px);opacity: 0;
+    }
+    100%{
+        transform: translateY(0);opacity: 1;
+    }
+}
+
+/*Zoom Gambar*/
+.zoomgmb{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.zoomgmb.show{
+    display: flex;
+}
+
+.zoomgmb.hide{
+    display: none;
+}
+
+.zoomgmb .close-zoomgmb{
+    height: 35px;
+    width: 35px;
+    background-color: rgba(255, 130, 72, 0.651);
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 101;
+}
+
+.zoomgmb img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+/*KONTAK*/
+.kontak{
+    background-color: rgb(71, 54, 53);
+    padding: 35px 15px;
+}
+
+.kontak .form-kontak{
+    background-color: rgba(129, 98, 96, 0.336);
+    flex: 0 0 95%;
+    max-width: 95%;
+    margin-top: 50px;
+    padding: 40px;
+    border: 5px solid rgb(145, 114, 101);
+}
+
+.kontak .form-kontak .sosmed{
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 20px;
+    padding-top: 0px;
+    justify-content: space-between ;
+}
+.kontak .form-kontak .sosmed a{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(71, 54, 53);
+    border-radius: 3px;
+    display: inline-block;
+    border: 1px solid rgb(71, 54, 53);
+    line-height: 28px;
+    text-align: center;
+}
+.kontak .form-kontak .sosmed a .fa{
+    color: #ffffff;
+    font-size: 12px;
+}
+.kontak .form-kontak .space-between{
+    justify-content: space-between;
+}
+.kontak .form-kontak .col-6{
+    flex: 0 0 calc( 50% - 15px );
+    max-width: calc( 50% - 15px );
+}
+.kontak .form-kontak .col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.kontak .form-kontak .form-control{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 5px solid rgb(145, 114, 101);
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.kontak .form-kontak textarea.form-control{
+    height: 140px;
+}
+.kontak .form-kontak .form-control::placeholder{
+    color: rgb(71, 54, 53);
+}
+
+.kontak .form-kontak .tombol{
+    display: grid;
+    flex: 0 0 100%;
+    max-width: 100%;
+    justify-items: right;
+}
+
+.kontak .form-kontak .tombol input[type="submit"] {
+    border-radius: 10px;
+    color:#ffffff;
+    border: 5px solid #ffffff;
+    padding: 3px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: transparent;
+}
+
+.kontak .form-kontak .tombol input[type="submit"]:hover{
+    background-color:#ffffff;
+    color: rgba(71, 54, 53);
+}
+
+/*footer*/
+footer{
+    background-color: pink;
+    color: rgb(71, 54, 53);
+    text-align: center;
+    padding: 15px 0;
+}
