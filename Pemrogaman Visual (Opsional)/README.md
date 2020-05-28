@@ -12,8 +12,9 @@ Pastikan sudah menginstall :
 
 @@@@ Login User @@@@
 
-# ID User = USER001
-# Password = admin
+- Login terlebih dahulu untuk dapat menggunakan semua tombolnya
+* ID User = USER001
+* Password = admin
 
 @@@@ Program Pendukung @@@@
 
