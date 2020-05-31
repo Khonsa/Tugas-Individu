@@ -1,10 +1,32 @@
 <?php
 //ob_start();
-//session_start();
+session_start();
+
+if(!isset($_SESSION["login"])){
+    header("Location: login.php");
+    exit;
+}
 //if(!isset($_SESSION['user_username'])) header("location: login.php");
 //include "connect.php";
 require 'function.php';
 $pelanggan = query("SELECT * FROM pelanggan");
+if (isset($_POST["submit"]) ) {
+        
+    if( tambah($_POST) > 0 ){
+        echo "<script>
+        alert('data berhasil ditambahkan');
+        document.location.href = 'selamatDatang.php';
+        </script>";
+    }else{
+        echo "<script>
+        alert('data gagal ditambahkan');
+        document.location.href = 'selamatDatang.php';
+        </script>";
+    }
+
+
+}
+
 
 ?>
 
@@ -28,6 +50,7 @@ $pelanggan = query("SELECT * FROM pelanggan");
                             <li><a href="#home" class="active">HOME</a></li>
                             <li><a href="#menu">MENU</a></li>
                             <li><a href="#pelanggan">DATA PELANGGAN</a></li>
+                            <li><a href="logout.php">LOGOUT</a></li>
                         </ul>
                     </div>
                 </div>
@@ -42,7 +65,7 @@ $pelanggan = query("SELECT * FROM pelanggan");
                             <div class="home-content">
                                 <h1 class="selamat">Selamat Datang</h1>
                                 <div class="buttonLearn">
-                                    <a href="#">Learn More</a>
+                                    <a href="logout.php">Logout</a>
                                 </div>
                             </div>
                         </div>
@@ -138,8 +161,8 @@ $pelanggan = query("SELECT * FROM pelanggan");
                                                 <td><?= $i; ?></td>
                                                 <td>
                                                     <a href="#">Ubah</a> |
-                                                    <a href="#">Hapus</a>
-                                                </td>
+                                                    <a href="hapus.php?id= <?= $plg["idpelanggan"];?>">Hapus</a>
+                                                </td> 
                                                 <td><?= $plg["idpelanggan"]; ?></td>
                                                 <td><?= $plg["namapelanggan"]; ?></td>
                                                 <td><?= $plg["jeniskelamin"]; ?></td>
@@ -158,11 +181,8 @@ $pelanggan = query("SELECT * FROM pelanggan");
                 </div> 
             </div>
         </section>
-            
-        <!--akhir datapelanggan-->
-        <!--form tambah-->
-    }
-        <section class="tambahdata" id="tambah">
+    <!--awal tambah form data-->
+    <section class="tambahdata" id="tambah">
             <div class ="container">
                 <div class="row">
                     <div class="main-content">
@@ -173,8 +193,8 @@ $pelanggan = query("SELECT * FROM pelanggan");
                             <form action="" method="post">
                                 <ul>
                                     <li>
-                                        <label for="nama">Nama : </label>
-                                        <input type="text" name="nama" id="nama" required>
+                                        <label for="namapelanggan">Nama : </label>
+                                        <input type="text" name="namapelanggan" id="namapelanggan" required>
                                     </li>
                                     <li>
                                         <label for="jeniskelamin">Jenis Kelamin : </label>
@@ -202,8 +222,10 @@ $pelanggan = query("SELECT * FROM pelanggan");
             </div>
 
         </section>
-        <!--awal profil-->
-        <!--akhir profil-->
+    <!--awal tambah form data-->
+
+        <!--akhir datapelanggan-->
+        <script src="script.js"></script>
     </body>
 </html>
 

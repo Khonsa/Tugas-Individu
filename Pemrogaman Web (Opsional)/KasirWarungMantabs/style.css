@@ -1,0 +1,615 @@
+
+body{
+    margin: 0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+.container{
+    margin: auto;
+    max-width: 1140px;
+}
+
+.column{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+}
+.main-content{
+    position: absolute;
+    right: 0px;
+    width: 1121px;
+}
+
+.judul-section{
+    height: 100px;
+    flex: 0 0 100%;
+}
+
+.judul-section h1{
+    font-size: 70px;
+    color: #ffffff;
+    padding-left: 15px;
+    padding-top: 20px;
+    margin: 0;
+    text-shadow: 6px 6px 0 rgb(0, 0, 0, 0.7);
+}
+/*Registrasi*/
+.registrasi-page{
+    margin-bottom: 0px;
+    padding: 0px;
+    background: url(gambar/backLogin.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+}
+
+.registrasi-box{
+    width: 320px;
+    height: 420px;
+    background: rgb(0, 0, 0, 0.5);
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 70px;
+    transform: translate(-50%, -50%);
+}
+
+.profile{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.registrasi-box h1{
+    margin-top: 0px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.registrasi-box p{
+    margin-bottom: 0px;
+    padding: 0px;
+    font-weight: 400;
+}
+.registrasi-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.registrasi-box input[type="text"], input[type="Password"]{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 15px;
+}
+.registrasi-box input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: #F37735;
+    transition: all 0.5s ease;
+}
+.registrasi-box input[type="submit"]:hover{
+    cursor: pointer;
+    color: #F37735;
+    background-color: #ffffff;
+}
+.registrasi-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.registrasi-box a:hover{
+    color: #F37735;
+}
+
+/*login*/
+.login-page{
+    margin-bottom: 0px;
+    padding: 0px;
+    background: url(gambar/backLogin.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+}
+
+.login-box{
+    width: 320px;
+    height: 420px;
+    background: rgb(0, 0, 0, 0.5);
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 70px;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    margin-top: 0px;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.login-box p{
+    margin-bottom: 0px;
+    padding: 0px;
+    font-weight: 400;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="Password"]{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 15px;
+}
+.login-box input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: #F37735;
+    transition: all 0.5s ease;
+}
+.login-box input[type="submit"]:hover{
+    cursor: pointer;
+    color: #F37735;
+    background-color: #ffffff;
+}
+.login-box a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.login-box a:hover{
+    color: #F37735;
+}
+
+/*header*/
+header{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+}
+header .container{
+    background-color: #3B322C;
+    width: 245px;
+    position: fixed;
+    height: 100vh;
+}
+
+ 
+header .column{
+    justify-content: flex-start;
+    margin: auto;
+    position: relative;
+    padding-top: 15px ;
+}
+
+header .navbar {
+    padding-top: 90px;
+}
+
+header .navbar ul{
+    padding: 0;
+    margin: 0;
+}
+header .navbar ul li{
+    left: 20px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+header .navbar ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 50px;
+    color: #ffffff;
+    font-weight: 600;
+    position: relative;
+    padding-left: 20px;
+}
+header .navbar ul li a::before{
+    content: '';
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    height: 0%;
+    width: 10px;
+    opacity: 0%;
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    transition: all .2s ease;
+    }
+
+
+    header .navbar ul li a:hover::before{
+        
+        height: 100%;
+        bottom: 0;
+        opacity: 100%;
+    }
+
+    header .navbar ul li a.active::before{
+        height: 100%;
+        bottom: 0;
+        opacity: 100%;
+    }
+
+    
+/*Welcome*/
+.SelamatDatang{
+    margin-bottom: 0px;
+    padding: 0px;
+    background: url(gambar/welbackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    height: 100vh;
+}
+
+.SelamatDatang .full-screen{ 
+    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.SelamatDatang .main-content .home-content{
+    margin-top: 300px;
+}
+
+.SelamatDatang .main-content .home-content h1{
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    text-shadow: 6px 6px 0 rgb(0, 0, 0, 0.7);
+}
+
+.SelamatDatang .main-content .home-content .buttonLearn{
+    margin-left: 460px;
+    padding-top: 20px;}
+    
+.SelamatDatang .main-content .home-content .buttonLearn a{
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: rgba(39, 38, 39, 0.445);
+    color:#ffffff;
+    border: 3px solid #ffffff;
+    padding: 5px 25px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 800;
+    transition: all 1s ease;
+}
+.SelamatDatang .main-content .home-content .buttonLearn a:hover{
+    background-color: #3B322C;
+}
+
+/* menu*/
+.Menu{
+    margin-left: 250px;
+    background: url(/gambar/menu.jpg);
+    background-color: #D29E70;
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    height: 100vh;
+}
+
+.Menu .main-content{
+    margin-top: -200px;
+    display: block; 
+}
+
+.Menu .menu-content{
+    justify-content: center;
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100;
+    padding-top: 90px;
+}
+
+.Menu .isi-menu{
+    display: flex;
+    flex: 0 0 60%;
+    max-width: 60%;
+    justify-content: space-between;   
+}
+
+.Menu .menu-content .isi-menu .box-daftar .judulmenu h3{
+    color: #13100E;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+.Menu .menu-content .isi-menu .box-daftar .box-in{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.Menu .menu-content .isi-menu .box-daftar .box-in li{
+    list-style: none;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/*pesanan*/
+
+/*data pelanggan*/
+.datapelanggan{
+    margin-left: 250px;
+    background-color: #D29E70;
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    height: 100vh;
+}
+
+.datapelanggan .main-content{
+    margin-top: -300px;
+}
+
+.datapelanggan .main-content .data-box{
+    margin-top: 40px;
+    display: flex;
+    max-width: 100%;
+    margin-left: 120px;
+}
+
+.datapelanggan .main-content .tabel-pelanggan{
+    border-collapse : collapse;
+    margin: 25px 0;
+    font-size: 19px;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+}
+
+.datapelanggan .main-content .tabel-pelanggan thead tr{
+    background-color: #3B322C;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+}
+
+.datapelanggan .main-content .tabel-pelanggan thead tr th, .tabel-pelanggan tbody tr td{
+
+    padding: 12px 15px;
+}
+.datapelanggan .main-content .tabel-pelanggan tbody tr{
+    border-bottom: 2px solid rgb(102, 91, 84);
+}
+.datapelanggan .main-content .tabel-pelanggan tbody tr:nth-of-type(even){
+    background-color: #755B46;
+}
+
+.datapelanggan .main-content .tabel-pelanggan tbody tr:last-of-type{
+    border-bottom: 3px solid #3B322C;
+}
+
+.datapelanggan .main-content .tabel-pelanggan tbody tr td a{
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgb(0, 0, 0, 0.7);
+}
+
+.datapelanggan .main-content .buttonTambah{
+    margin-left: 500px;
+    padding-top: 20px;
+}
+
+.datapelanggan .main-content .buttonTambah a{
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: rgba(39, 38, 39, 0.445);
+    color:#ffffff;
+    border: 3px solid #ffffff;
+    padding: 15px 25px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 800;
+    transition: all 1s ease;
+}
+.datapelanggan .main-content .buttonTambah a{
+    background-color: #3B322C;
+}
+
+/*tambah data*/
+.tambahdata{
+    margin-left: 250px;
+    background-color: #D29E70;
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    height: 100vh;
+}
+
+.tambahdata .main-content{
+    margin-top: -300px;
+}
+
+.tambahdata .main-content .data-box{
+    margin-top: 40px;
+    display: flex;
+    max-width: 100%;
+    margin-left: 150px;
+}
+.tambahdata .main-content .data-box form{
+    margin-top: 50px;
+}
+
+.tambahdata ul li input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.tambahdata ul li input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.tambahdata button[type="submit"]{
+    padding: 12px 25px;
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: #3B322C;
+    transition: all 0.5s ease;
+}
+.tambahdata button[type="submit"]:hover{
+    cursor: pointer;
+    color: #3B322C;
+    background-color: #ffffff;
+}
+
+.tambahdata .main-content .buttonkembali{
+    margin-bottom: 600px;
+    margin-left: 500px;
+    padding-top: 20px;
+}
+
+.tambahdata .main-content .buttonkembali a{
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: rgba(39, 38, 39, 0.445);
+    color:#ffffff;
+    border: 3px solid #ffffff;
+    padding: 15px 25px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 800;
+    transition: all 1s ease;
+}
+.tambahdata .main-content .buttonkembali a{
+    background-color: #3B322C;
+}
+
+/*ubah data*/
+.ubahdata{
+    margin-left: 250px;
+    background-color: #D29E70;
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+    height: 100vh;
+}
+
+.ubahdata .main-content{
+    margin-top: -300px;
+}
+
+.ubahdata .main-content .data-box{
+    margin-top: 40px;
+    display: flex;
+    max-width: 100%;
+    margin-left: 150px;
+}
+.ubahhdata .main-content .data-box form{
+    margin-top: 50px;
+}
+
+.ubahdata ul li input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.ubahdata ul li input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.ubahdata button[type="submit"]{
+    padding: 12px 25px;
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: #3B322C;
+    transition: all 0.5s ease;
+}
+.ubahdata button[type="submit"]:hover{
+    cursor: pointer;
+    color: #3B322C;
+    background-color: #ffffff;
+}
+
+.ubahhdata .main-content .buttonkembali{
+    margin-bottom: 600px;
+    margin-left: 500px;
+    padding-top: 20px;
+}
+
+.ubahdata .main-content .buttonkembali a{
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: rgba(39, 38, 39, 0.445);
+    color:#ffffff;
+    border: 3px solid #ffffff;
+    padding: 15px 25px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 800;
+    transition: all 1s ease;
+}
+.ubahdata .main-content .buttonkembali a{
+    background-color: #3B322C;
+}
+
