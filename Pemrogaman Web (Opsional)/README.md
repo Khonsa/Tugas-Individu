@@ -1,6 +1,6 @@
 @@@@ Web Data Pelanggan Warung @@@@
 
-web aplikasi sederhana untuk data pelanggan warung, dengan database sql. Jalankan menggunakan xampp lalu aktifkan mysql dan Apache. Lalu tempatkan folder Warung Mantabs pada folder C:/xampp/htdoc. Jalankan pada browser dengan mengetik localhost/WarungMantabs/login.php 
+web aplikasi sederhana untuk data pelanggan warung, dengan database sql. Jalankan menggunakan xampp lalu aktifkan mysql dan Apache. Lalu tempatkan folder Warung Mantabs pada folder C:/xampp/htdoc. Jalankan pada browser dengan mengetik localhost/KasirWarungMantabs/login.php 
 
 @@@ Login @@@
 username : admin1
